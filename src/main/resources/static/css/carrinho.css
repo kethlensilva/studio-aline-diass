@@ -1,0 +1,104 @@
+/* checkout-produto.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #c7beaf;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.produto {
+  flex: 1;
+  background: url('../images/Tonico\ mega\ hair.jpg') no-repeat center center;
+  background-size: cover;
+  background-color: #c7beaf;
+}
+
+.cart {
+  width: 400px;
+  background-color: #c7beaf;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.item div {
+  padding: 10px;
+}
+
+.summary {
+  margin-top: 30px;
+}
+
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.summary button {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.summary a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: underline;
+  font-size: 14px;
+}
+a.botao {
+  display: inline-block;
+  background-color: #c7beaf;
+  color: #3d3a37;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a.botao-secundario {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  color: #3d3a37;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}

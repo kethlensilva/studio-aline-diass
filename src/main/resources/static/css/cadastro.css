@@ -1,0 +1,166 @@
+body {
+    background: #454442;
+    font-family: 'Proxima Nova', sans-serif;
+    /* Removido flex para usar posicionamento absoluto */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+/* logo */
+.logo {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* login título */
+.login {
+    position: absolute;
+    top: 206px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 467px;
+    height: 43px;
+    font: bold 24px/29px 'Proxima Nova', sans-serif;
+    color: #C8C1B6;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 1;
+}
+
+/* caixas de input (email, senha) */
+.email-box,
+.senha-box,
+.nome-box {
+    position: absolute;
+    left: 50%;
+    width: 348px;
+    height: 47px;
+    background: #FFFFFF;
+    border: 1px solid #BACAD1;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.nome-box {
+    top: 240px;
+    transform: translateX(-50%);
+}
+
+.email-box {
+    top: 290px;
+    transform: translateX(-50%);
+}
+
+.senha-box {
+    top: 340px;
+    transform: translateX(-50%);
+}
+
+/* inputs */
+.nome,
+.email,
+.senha {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 328px;
+    height: 47px;
+    font: normal normal normal 14px/17px 'Proxima Nova', sans-serif;
+    color: #454442; /* Texto escuro para legibilidade */
+    text-align: left;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* placeholder estilizado */
+.nome::placeholder,
+.email::placeholder,
+.senha::placeholder {
+    color: #C8C1B6;
+    font-size: 14px;
+}
+
+/* botão visualizar senha (se usar) */
+.visualizar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.visualizar img {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: none;
+}
+
+/* botão entrar */
+.entra-box {
+    position: absolute;
+    top: 410px;
+    left: 50%;
+    width: 348px;
+    height: 47px;
+    background: #C8C1B6;
+    border-radius: 3px;
+    opacity: 1;
+    transform: translateX(-50%);
+}
+
+.entrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 17px;
+    font: bold 14px/17px 'Proxima Nova', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* link para já tem conta */
+.ja-tem-conta {
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    width: 361px;
+    font: normal normal normal 14px/17px 'Proxima Nova', sans-serif;
+    color: #C8C1B6;
+    text-align: center;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.ja-tem-conta a {
+    color: #C8C1B6;
+    text-decoration: none;
+}
+
+.ja-tem-conta a:hover {
+    text-decoration: underline;
+}

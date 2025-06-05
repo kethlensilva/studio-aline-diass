@@ -1,0 +1,177 @@
+body {
+    background: #454442;
+    font-family: 'Proxima Nova', sans-serif;
+    /* Removido flex para usar posicionamento absoluto */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+/* logo */
+.logo {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/* login */
+.login {
+    position: absolute;
+    top: 206px;
+    left: 450px;
+    width: 467px;
+    height: 43px;
+    font: bold 24px/29px 'Proxima Nova';
+    text-align: center;
+    letter-spacing: 0px;
+    color: #C8C1B6;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+/* email box */
+.email-box {
+    position: absolute;
+    top: 279px;
+    left: 510px;
+    width: 348px;
+    height: 47px;
+    background: #FFFFFF;
+    border: 1px solid #BACAD1;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+/* email */
+.email {
+    position: absolute;
+    top: 0; /* Alinha o texto no topo da caixa */
+    left: 10px; /* Alinha o texto à esquerda da caixa */
+    width: 328px; /* Ajuste para a largura da caixa de texto */
+    height: 47px; /* Ajuste para a altura da caixa */
+    font: normal normal normal 14px/17px 'Proxima Nova';
+    color: #C8C1B6;
+    text-align: left;
+    background: transparent; /* Deixa o fundo transparente para o placeholder aparecer */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+/* Estilo para o texto do placeholder */
+.email::placeholder {
+    color: #C8C1B6; /* Cor do texto do placeholder */
+    font-size: 14px; /* Tamanho do texto do placeholder */
+}
+/* senha box */
+.senha-box {
+    position: absolute;
+    top: 336px;
+    left: 510px;
+    width: 348px;
+    height: 47px;
+    background: #FFFFFF;
+    border: 1px solid #BACAD1;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+/* senha */
+.senha {
+    position: absolute;
+    top: 0; /* Alinha o texto no topo da caixa */
+    left: 10px; /* Alinha o texto à esquerda da caixa */
+    width: 328px; /* Ajuste para a largura da caixa de texto */
+    height: 47px; /* Ajuste para a altura da caixa */
+    font: normal normal normal 14px/17px 'Proxima Nova';
+    color: #C8C1B6;
+    text-align: left;
+    background: transparent; /* Deixa o fundo transparente para o placeholder aparecer */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+/* Estilo para o texto do placeholder */
+.senha::placeholder {
+    color: #C8C1B6; /* Cor do texto do placeholder */
+    font-size: 14px; /* Tamanho do texto do placeholder */
+}
+
+/* visualizar */
+.visualizar {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Alinha à direita da caixa de senha */
+    width: 24px; /* Aumenta o tamanho do ícone */
+    height: 24px; /* Aumenta o tamanho do ícone */
+    background: transparent; /* Remove o fundo do botão */
+    cursor: pointer; /* Adiciona o cursor como pointer para indicar que é clicável */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; /* Remove a borda do botão */
+}
+
+/* imagem do ícone */
+.visualizar img {
+    width: 16px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 16px;
+    border: none; /* Remove a borda do ícone, se houver */
+    background: transparent; /* Remove o fundo do ícone */
+}
+
+
+
+/* entrar box */
+.entra-box {
+    position: absolute;
+    top: 419px;
+    left: 510px;
+    width: 348px;
+    height: 47px;
+    background: #C8C1B6;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+/* entrar */
+.entrar {
+    position: absolute;
+    top: 50%; /* Alinha verticalmente ao centro da caixa */
+    left: 50%; /* Alinha horizontalmente ao centro da caixa */
+    transform: translate(-50%, -50%); /* Ajuste para realmente centralizar o texto */
+    width: 180px;
+    height: 17px;
+    font: bold 14px/17px 'Proxima Nova';
+    color: #FFFFFF;
+    text-align: center;
+    background: transparent;
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Adiciona o cursor pointer para indicar que o botão é clicável */
+    opacity: 1;
+}
+
+
+/* esqueceu */
+.cadastre-se {
+    position: absolute;
+    top: 480px;
+    left: 510px;
+    width: 361px;
+    height: 34px;
+    font: normal normal normal 14px/17px 'Proxima Nova';
+    color: #C8C1B6;
+    text-align: left;
+    opacity: 1;
+}
+
+

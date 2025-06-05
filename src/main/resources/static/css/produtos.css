@@ -1,0 +1,272 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body e background */
+body {
+  font-family: 'Helvetica', sans-serif; /* alterado */
+  background-color: #2f2f2f;
+  color: #eee;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2f2f2f;
+  border-bottom: 1px solid #444;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.ativo {
+  color: #fff;
+}
+
+.user-menu a {
+  color: #ccc;
+  margin-left: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.user-menu a:hover {
+  color: #b08b63;
+}
+
+/* Main */
+main {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  gap: 40px;
+  border-radius: 10px;
+}
+
+.intro-texto {
+  max-width: 500px;
+}
+
+.intro-texto h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.intro-texto p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.intro-imagem img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Grid de produtos */
+.produtos-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* Produtos */
+.produto {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
+  color: #eee;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.produto h4 {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.categoria {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 12px;
+}
+
+.preco {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.preco del {
+  color: #777;
+  margin-right: 8px;
+}
+
+.desconto {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #b08b63;
+  color: #fff;
+  padding: 5px 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.produto.destaque {
+  border: 2px solid #b08b63;
+}
+
+/* Botões dos produtos - ATUALIZADO para o estilo transparente com borda branca */
+.produto button {
+  padding: 6px 12px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.produto button:hover {
+  background-color: white;
+  color: #2f2f2f;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  padding: 40px 60px;
+  color: white;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.footer-top h3,
+.footer-top h4 {
+  margin-bottom: 10px;
+}
+
+.footer-top input {
+  padding: 8px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+.footer-top button {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-top button:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer-top a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-top a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-imagem {
+    margin-top: 20px;
+  }
+
+  .produtos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
